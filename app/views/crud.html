@@ -1,0 +1,23 @@
+<h2>Animals</h2>
+<div class="item" data-ng-repeat="animal in animals">
+    <label>Name:</label>
+    <input type="text" ng-model="animal.name"></input>
+    <label>Age:</label>
+    <input type="number" ng-model="animal.age"></input>
+    <label>Size:</label>
+    <input type="text" ng-model="animal.size"></input>
+    <button ng-click="removeAnimal(animal)">Remove</button>
+</div>
+<div>
+    <h3>New Animal</h3>
+    <label>Name:</label>
+    <input type="text" ng-model="newAnimal.name"></input>
+    <label>Age:</label>
+    <input type="number" ng-model="newAnimal.age"></input>
+    <label>Size:</label>
+    <input type="text" ng-model="newAnimal.size"></input>
+    <button ng-click="addAnimal()">Add</button>
+</div>
+<!--<label ng-show="animal.size === 'XL'">TOO BIG</label>
+ng-class="{'red':animal.age>=20}"
+-->
